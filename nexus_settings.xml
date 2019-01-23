@@ -7,10 +7,22 @@
       <url>http://nexus3.gpte-hw-cicd.svc.cluster.local:8081/repository/maven-all-public/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
+    <mirror>
+      <id>Mitzi</id>
+      <name>Mitzi private mirror</name>
+      <url>http://nexus3.gpte-hw-cicd.svc.cluster.local:8081/repository/all-maven-public/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
   </mirrors>
   <servers>
     <server>
       <id>nexus</id>
+      <username>admin</username>
+      <password>redhat</password>
+    </server>
+    <server>
+      <id>mitzi</id>
       <username>admin</username>
       <password>redhat</password>
     </server>
